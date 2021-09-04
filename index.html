@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+        integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <title>Case Study 2</title>
+
+</head>
+
+<body>
+    <center>
+        <h1>Case Study: Google Lens<img src="Google_Lens_fitter.png"> vs. <kbd>Mobilenet</kbd></h1>
+        <br>
+        <br>
+        <div class="modalbtncontainer">1.&nbsp;
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal1">Launch Card
+                1</button>
+        </div>
+        <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Card 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h6>Test Image</h6>
+                            <img src="coconut.jpg" class="image">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8">
+                            <div class="row">
+                                <div class="col">Output On <span class="purple">Google Lens</span> is <span class="orange">Coconut</span></div>
+                                <div class="col">Output On <span class="purple">Mobilenet</span> is <span class="orange">Ping Pong Ball</span></div>
+                            </div>
+                            <br>
+                            <h3>Result is - Coconut</h3>
+                            <hr>
+                            <h3>Google Lens Wins!</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="modalbtncontainer">2.&nbsp;
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal2">Launch Card
+                2</button>
+        </div>
+
+        <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Card 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h6>Test Image</h6>
+                            <img src="Elephant-Africa-400x300.jpg" class="image">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8">
+                            <div class="row">
+                                <div class="col">Output On <span class="purple">Google Lens</span> is <span class="orange">African bush elephant</span></div>
+                                <div class="col">Output On <span class="purple">Mobilenet</span> is <span class="orange">African Elephant, loxodonta africana</span></div>
+                            </div>
+                            <br>
+                            <h3>Result is - Elephant</h3>
+                            <hr>
+                            <h3>It's a draw?</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="modalbtncontainer">3.&nbsp;
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal3">Launch Card
+                3</button>
+        </div>
+
+        <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="Modal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Card 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h6>Test Image</h6>
+                            <img src="Clock.jpg" class="image">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8">
+                            <div class="row">
+                                <div class="col">Output On <span class="purple">Google Lens</span> is <span class="orange">Clock</span></div>
+                                <div class="col">Output On <span class="purple">Mobilenet</span> is <span class="orange">Wall clock, analog clock</span></div>
+                            </div>
+                            <br>
+                            <h3>Result is - Wall Clock</h3>
+                            <hr>
+                            <h3>Mobilenet Wins!</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="modalbtncontainer">4.&nbsp;
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal4">Launch Card
+                4</button>
+        </div>
+
+        <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="Modal4Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Card 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h6>Test Image</h6>
+                            <img src="Xbox_controller.jpg" class="image">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8">
+                            <div class="row">
+                                <div class="col">Output On <span class="purple">Google Lens</span> is <span class="orange">Xbox S 1 controller  </span></div>
+                                <div class="col">Output On <span class="purple">Mobilenet</span> is <span class="orange">Remote Controller</span></div>
+                            </div>
+                            <br>
+                            <h3>Result is - Xbox S 1 controller</h3>
+                            <hr>
+                            <h3>Google Lens Wins!</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="modalbtncontainer">5.&nbsp;
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal5">Launch Card
+                5</button>
+        </div>
+
+        <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="Modal5Label" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Card 5</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="close"></button>
+                    </div>
+                    <div class="modal-body row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h6>Test Image</h6>
+                            <img src="download.jpg" class="image">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xm-8">
+                            <div class="row">
+                                <div class="col">Output On <span class="purple">Google Lens</span> is <span class="orange">Spoon</span></div>
+                                <div class="col">Output On <span class="purple">Mobilenet</span> is <span class="orange">Spotlight, spot</span></div>
+                            </div>
+                            <br>
+                            <h3>Result is - spoon</h3>
+                            <hr>
+                            <h3>Google Lens Wins!</h3>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <p id="conclusion">Google Lens got 4 points and Mobilenet got 2. Therefore, Google Lens is the better model to use!</p>
+    </center>
+</body>
+
+</html>
